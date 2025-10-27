@@ -68,10 +68,18 @@ namespace Autoclicker
 
         private void ToggleBtn_Pressed(object sender, RoutedEventArgs e) => Toggle();
 
+        private void MouseButton_Switch(object sender, RoutedEventArgs e)
+        {
+            _clicker.SwitchButton();
+            MouseButtonText.Text = _clicker.IsOn() == "On"
+                ? ("LEFT")
+                : ("RIGHT");
+        }
+
         private void Toggle()
         {
             _clicker.Toggle();
-            StatusText.Text = _clicker.IsOn() == "On" ? "Running" : "Stopped";
+            StatusText.Text = _clicker.IsOn() == "On" ? "ON" : "OFF";
         }
 
         private void SetTimerFromCps(int cps)

@@ -26,6 +26,8 @@ namespace Autoclicker
             if(_toggle) return "On";
             else return "Off";
         }
+
+        public void SwitchButton() => _leftButton = !_leftButton;
         public int Cps
         {
             get => _cps;

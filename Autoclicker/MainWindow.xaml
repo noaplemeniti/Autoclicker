@@ -17,10 +17,9 @@
         <Button Name="ToggleBtn"
                 Content="Toggle (F6)"
                 HorizontalAlignment="Left"
-                Margin="42,95,0,0"
+                Margin="14,95,0,0"
                 VerticalAlignment="Top"
-                Width="76" Height="25"
-                Grid.ColumnSpan="3" Grid.Row="1"
+                Width="66" Height="25" Grid.Row="1"
                 Click="ToggleBtn_Pressed"/>
 
         <Slider Name="CpsSlider"
@@ -36,16 +35,17 @@
                 ValueChanged="CpsSlider_ValueChanged"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="10,70,0,0"
-                   Text="1" VerticalAlignment="Top" Width="20" Grid.Row="1"/>
+                   Text="1" VerticalAlignment="Top" Width="10" Grid.Row="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="45,70,0,0"
-                   Text="20" VerticalAlignment="Top" Width="30" Grid.Column="2" Grid.Row="1"/>
+                   Text="20" VerticalAlignment="Top" Width="13" Grid.Column="2" Grid.Row="1"/>
 
-        <TextBox TextAlignment="Center" FontSize="35"
-                 HorizontalAlignment="Left" Margin="10,19,0,0"
-                 VerticalAlignment="Top" Width="140" Height="50"
-                 Grid.RowSpan="2" Grid.ColumnSpan="3"
+        <TextBox TextAlignment="Center" FontSize="25"
+                 HorizontalAlignment="Left" Margin="10,7,0,0"
+                 VerticalAlignment="Top" Width="140" Height="40" Grid.ColumnSpan="3"
                  IsReadOnly="True"
                  Text="{Binding ElementName=CpsSlider, Path=Value, StringFormat={}{0} cps}"/>
-        <TextBox Name="StatusText" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="140" Height="47" TextAlignment="Center" FontSize="35"/>
+        <TextBox Name="StatusText" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="10,47,0,0" TextWrapping="Wrap" Text="OFF" VerticalAlignment="Top" Width="140" Height="37" TextAlignment="Center" FontSize="25" Grid.RowSpan="2"/>
+        <Button Name ="Mouseclick_Button" Click="MouseButton_Switch"  Content="Left/Right" HorizontalAlignment="Left" Margin="0,95,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.205,0.196" Width="66" Grid.Column="1" Grid.ColumnSpan="2" Height="25"/>
+        <TextBox Name="MouseButtonText" FontSize="25" TextAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="10,27,0,0" Grid.Row="1" TextWrapping="Wrap" Text="LEFT" VerticalAlignment="Top" Width="140" Height="33"/>
     </Grid>
 </Window>
