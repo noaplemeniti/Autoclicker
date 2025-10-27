@@ -1,0 +1,60 @@
+##############################
+# Visual Studio / .NET ignore
+##############################
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+*.exe
+*.dll
+*.pdb
+
+# Visual Studio user files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Test results and coverage
+TestResult*/
+*.TestResults/
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Auto-generated files
+*_i.c
+*_p.c
+*_h.h
+*.tmp
+*.cache
+*.log
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Other
+*.swp
+*.bak
+*.orig
+*.rej
