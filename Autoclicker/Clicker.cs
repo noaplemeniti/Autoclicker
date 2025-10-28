@@ -6,7 +6,7 @@ namespace Autoclicker
     internal class Clicker
     {
         private bool _toggle;
-        private bool _leftButton = true; // toggle this if you add a UI control
+        private bool _leftButton = true;
         private int _cps = 10;
 
         public Task Click()
